@@ -1,0 +1,20 @@
+.navbar-nav {
+  @include breakpoint(pad) {
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;  
+    .nav-item {
+        background: #707070;
+        border-bottom: 1px solid $white;
+        &:hover {
+            background: darken(#707070, 5%) ;
+        }
+    }
+    .nav-link {
+      color: $white !important;    
+  }
+}
+
+}

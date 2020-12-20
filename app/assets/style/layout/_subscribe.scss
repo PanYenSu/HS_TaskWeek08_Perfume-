@@ -1,0 +1,26 @@
+.subscribe {
+    
+    background: url(../images/index10.jpg) center center no-repeat;
+    background-size: cover; 
+    min-height: 600px;
+    &-form {        
+        margin-bottom: 112px;
+    }
+    @include media-breakpoint-up(md) {
+        &-input {
+            max-width: 219px;
+        }   
+        &-btn {
+            max-width: 131px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        &-input {
+            width: 60%;
+        }   
+        &-btn {
+            width: 40%;
+        }
+    }
+
+}

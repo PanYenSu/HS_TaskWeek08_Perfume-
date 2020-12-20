@@ -1,0 +1,7 @@
+@mixin banner($url, $height) {
+    background-image: url($url);
+    height: $height;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}

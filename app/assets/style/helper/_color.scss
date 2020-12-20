@@ -1,0 +1,88 @@
+.text {
+    &-primary01 {
+		color: $primary01;
+	}
+	&-danger {
+		color: $danger;
+    }
+    &-secondary {
+		color: $secondary;
+	}
+	&-light{
+		color: $light;
+	}
+	&-white {
+		color: $white;
+	}
+}
+
+.bg {
+	&-primary01 {
+		background-color: $primary01;
+    }
+    &-secondary {
+		background-color: $secondary;
+	}
+	&-light{
+		background-color: $light;
+	}
+	&-danger {
+		background-color: $danger;
+	}
+	&-black {
+		background-color: $black;
+	}
+	&-secondary02 {
+		background-color: #EDF4EE;
+	} 
+}
+.badge {
+	&-primary01 {
+		color: $secondary;
+    	background-color: $primary01;
+	}
+	&-secondary02 {
+		// color: $secondary;
+    	background-color: $secondary02;
+	}
+}
+
+.border {
+	&-primary01 {
+		border: 1px solid $primary01;
+	}
+	&-dark {
+		border: 1px solid $primary-dark;
+	}
+	&-secondary02 {
+		border: 1px solid $secondary02;
+	}
+}
+.btn {
+	padding: 0.5rem 2rem;
+	&-light {
+		color: $secondary;
+		background-color: #fff;
+		border-color: $secondary;
+		border-radius: 2px;
+
+	}
+	&-dark {
+		color: #fff;
+		background-color: $secondary;
+		border-color: $secondary;
+		border-radius: 2px;
+
+	}
+	&-outline-pink {
+		color: #E3006E;
+		background-color: #fff;
+		border-color: #E3006E;
+		border-radius: 2px;
+
+	}
+}
+
+.active {
+	color: #121212;
+}

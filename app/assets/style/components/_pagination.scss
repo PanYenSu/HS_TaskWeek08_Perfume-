@@ -1,0 +1,9 @@
+.page-link {
+    &-products {
+        padding-right: 20px;
+        &:hover {
+            color: $primary;        
+        } 
+        border: none;
+    }  
+}

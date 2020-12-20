@@ -1,0 +1,80 @@
+//font-size (1rem = 1*px)
+$base-font-size: 8px;
+$h1: $base-font-size * 8;
+$h2: $base-font-size * 6;
+$h3: $base-font-size * 4;
+$h4: $base-font-size * 3;
+$h5: $base-font-size * 2.5;   //20
+$h6: $base-font-size * 2;
+$h7: $base-font-size * 1.75;  //14
+$h8: $base-font-size * 1.5;   //12
+
+$base-line-height: 1.5;
+
+html, body {
+//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: $font-family-base;
+//   font-size: $base-font-size;  
+  font-size: 16px;
+  line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+.h1 {
+  font-size: 8rem; //64
+  font-weight: bold;
+  @include breakpoint(pad) {
+		font-size: 6rem;
+	}
+	@include breakpoint(phone) {
+		font-size: 4rem;
+	}
+}
+.h2 {
+  font-size: 6rem; //48
+  font-weight: bold;
+  @include breakpoint(pad) {
+		font-size: 4rem;
+	}
+	@include breakpoint(phone) {
+		font-size: 3rem;
+	}
+}
+.h3 {
+  font-size: 4.5rem; //36
+  font-weight: bold;
+  @include breakpoint(pad) {
+		font-size: 2.5rem;  //20
+	}
+	@include breakpoint(phone) {
+		font-size: 2rem;
+	}
+}
+.h4 {
+  font-size: 5.25rem; //42
+  // font-weight: bold;
+  @include breakpoint(pad) {
+		font-size: 4rem; 
+	}
+	@include breakpoint(phone) {
+		font-size: 2.5rem;  //20
+	}
+}
+.h5 {
+  font-size: 4rem; 
+  // font-weight: bold;
+  @include breakpoint(pad) {
+		font-size: 3rem;
+	}
+	@include breakpoint(phone) {
+		font-size: 2rem; 
+	}
+}
+.h6 {
+  font-size: 3rem; 
+	@include breakpoint(phone) {
+		font-size: 2rem; 
+	}
+}
+

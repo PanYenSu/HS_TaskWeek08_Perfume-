@@ -1,0 +1,18 @@
+.header {
+    .navbar {
+        &-badge {
+            transform: translateX(-6px) translateY(-6px);
+        }
+        &-toggler {
+            outline: none;
+        }
+    }
+
+}
+.footer {
+    @include media-breakpoint-down(md) {
+        .footer-logo {
+            width: 100%;
+        }
+    }
+}
