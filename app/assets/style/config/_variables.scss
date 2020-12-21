@@ -65,9 +65,10 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       #916019 !default;
-$primary01:     #8D8D8D !default;
-$primary02:     #E0E0E0 !default;
+$primary:     #772400 !default;
+$primary01:     #F0AD25 !default;
+$primary02:     #D54100 !default;
+$primary03:     #CED4DA !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -86,6 +87,7 @@ $theme-colors: map-merge(
     "primary":    $primary,
     "primary01":    $primary01,
     "primary02":    $primary02,
+    "primary03":    $primary03,
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
@@ -151,7 +153,7 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
+    1: ($spacer * .25),  //4
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),  //24
