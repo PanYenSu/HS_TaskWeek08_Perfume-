@@ -20,86 +20,86 @@
 
 $spacer: 16px;
 
-$spacers: (
-	// "1": $spacer * 0.25,
-	// "2": $spacer * 0.5,
-	// "3": $spacer,
-	// "4": $spacer * 1.5,
-	// "5": $spacer * 3,
-	"6": $spacer * 2,
-	"7": $spacer * 4,
-	"8": $spacer * 5
-);
+// $spacers: (
+// 	// "1": $spacer * 0.25,
+// 	// "2": $spacer * 0.5,
+// 	// "3": $spacer,
+// 	// "4": $spacer * 1.5,
+// 	// "5": $spacer * 3,
+// 	"6": $spacer * 2,
+// 	"7": $spacer * 4,
+// 	"8": $spacer * 5
+// );
 
-@each $i, $val in $spacers {
-	.m {
-		&l-#{$i} {
-			margin-left: $val;
-			@include breakpoint(pad) {
-				&-md {
-					margin-left: $val*0.5;
-				}
-			}
-			@include breakpoint(phone) {
-				&-sm {
-					margin-left: $val*0.25;
-				}
-			}
-		}
-		&r-#{$i} {
-			margin-right: $val;
-		}
-		&b-#{$i} {
-			margin-bottom: $val;
-		}
-		&t-#{$i} {
-			margin-top: $val;
-		}
-    }
-}
+// @each $i, $val in $spacers {
+// 	.m {
+// 		&l-#{$i} {
+// 			margin-left: $val;
+// 			@include breakpoint(pad) {
+// 				&-md {
+// 					margin-left: $val*0.5;
+// 				}
+// 			}
+// 			@include breakpoint(phone) {
+// 				&-sm {
+// 					margin-left: $val*0.25;
+// 				}
+// 			}
+// 		}
+// 		&r-#{$i} {
+// 			margin-right: $val;
+// 		}
+// 		&b-#{$i} {
+// 			margin-bottom: $val;
+// 		}
+// 		&t-#{$i} {
+// 			margin-top: $val;
+// 		}
+//     }
+// }
 
 
-$properties: (
+// $properties: (
 	
-  "pt": padding-top,
-  "pb": padding-bottom,
-  "pl": padding-left, 
-  "pr": padding-right,
-);
-@each $property, $property-value in $properties {
-  @for $i from 1 through 10 {
-    .#{$property}-#{$i} {
-      #{$property-value}: #{$i*8}px;
-    }
-  }
-}
+//   "pt": padding-top,
+//   "pb": padding-bottom,
+//   "pl": padding-left, 
+//   "pr": padding-right,
+// );
+// @each $property, $property-value in $properties {
+//   @for $i from 1 through 10 {
+//     .#{$property}-#{$i} {
+//       #{$property-value}: #{$i*8}px;
+//     }
+//   }
+// }
 
-// week05
+// // week05
 
-.h7 {
-	font-size: 0.75rem;   //12
-  }
-  .h8 {
-	font-size: 0.875rem;   //14
-  }
-  .rounded01 {
-	border-radius: 2px;
-  }
-  .material-icons{
-	&.md-12 { 
-	  font-size: 12px; 
-	}
-	&.md-18 { 
-	  font-size: 18px; 
-	}
-	&.md-36 { 
-	  font-size: 36px; 
-	}
-	&.md-40 { 
-	  font-size: 40px; 
-	}
-	&.md-48 { 
-	  font-size: 48px; 
-	}
-  }
+// .h7 {
+// 	font-size: 0.75rem;   //12
+//   }
+//   .h8 {
+// 	font-size: 0.875rem;   //14
+//   }
+//   .rounded01 {
+// 	border-radius: 2px;
+//   }
+//   .material-icons{
+// 	&.md-12 { 
+// 	  font-size: 12px; 
+// 	}
+// 	&.md-18 { 
+// 	  font-size: 18px; 
+// 	}
+// 	&.md-36 { 
+// 	  font-size: 36px; 
+// 	}
+// 	&.md-40 { 
+// 	  font-size: 40px; 
+// 	}
+// 	&.md-48 { 
+// 	  font-size: 48px; 
+// 	}
+//   }
 
