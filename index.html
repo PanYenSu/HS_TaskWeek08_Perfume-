@@ -7,25 +7,114 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首頁</title>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="jqueryui/style.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
   <header class="header">
-    這是 header
+    <div class="container d-flex justify-content-between align-items-center">      
+      <a class="" href="index.html">
+        <h1 class="m-0">PETPET</h1>
+        <img src="./assets/images/logo.svg" class="d-inline-block align-top logo" alt="">
+      </a>
+      <ul class="nav ">
+        <li class="nav-item ">
+          <a class="nav-link pl-10 text-primary" href="#">預約服務</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link pl-10 text-primary" href="#">成為寵物保姆</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pl-10 text-primary" href="#">登入</a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   
-<h1>
-  這是一段話
-</h1>
+<label for="from">从</label>
+<input type="text" id="from" name="from">
+<label for="to">到</label>
+<input type="text" id="to" name="to">
 
-<div class="box"></div>
+<div class="box">99999</div>
 
-  <footer class="footer">
-    footer
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+
+
+
+
+  <footer class="footer ">
+    <div class="bg-primary01 py-9">
+      <div class="container contact ">
+        <h2 class="h1 text-primary">有任何我們能幫助您的嗎？</h2>
+        <p class="h5 mb-3 text-primary font-weight-light">輸入電子信箱<br>將有專業人員在線幫您解決所有問題</p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="btn-contact">
+          <div class="input-group-append">
+            <button class="btn-contact btn  btn-primary02" type="button" id="btn-contact">送出</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5 class="text-primary">寵物服務</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
+  
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  
 </body>
 
 </html>
