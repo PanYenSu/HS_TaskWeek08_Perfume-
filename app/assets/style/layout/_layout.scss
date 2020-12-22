@@ -6,6 +6,10 @@
 
 }
 .footer {
+    .form-control {
+        max-width: 540px;
+        height: 48px;
+    }
     @include media-breakpoint-down(md) {
         .footer-logo {
             width: 100%;

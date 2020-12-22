@@ -64,7 +64,11 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+// $primary:       $blue !default;
+$primary:     #772400 !default;
+$primary01:     #F0AD25 !default;
+$primary02:     #D54100 !default;
+$primary03:     #CED4DA !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -77,6 +81,9 @@ $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "primary":    $primary,
+    "primary01":    $primary01,
+    "primary02":    $primary02,
+    "primary03":    $primary03,
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
@@ -138,11 +145,20 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
+    1: ($spacer * .25),  //4
     2: ($spacer * .5),
     3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    4: ($spacer * 1.5),  //24
+    5: ($spacer * 3),    //48
+    6: ($spacer * 2),    //32
+    7: ($spacer * 1.25),  //20
+    8: ($spacer * 1.75),  //28
+    9: ($spacer * 2.25),   //36
+    10: ($spacer * 2.5),   //40
+    11: ($spacer * 3.25),   //52
+    12: ($spacer * 3.75),   //60
+    13: ($spacer * 1.875),   //30
+    14: ($spacer * .75),   //12
   ),
   $spacers
 );
@@ -292,12 +308,13 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
+$h1-font-size:                $font-size-base * 2.5 !default;  //40
+$h2-font-size:                $font-size-base * 2 !default;    //32
+$h3-font-size:                $font-size-base * 1.75 !default;  //28
+$h4-font-size:                $font-size-base * 1.5 !default;   //24
+$h5-font-size:                $font-size-base * 1.25 !default;  //20
 $h6-font-size:                $font-size-base !default;
+$h7-font-size:                $font-size-base * .875!default; //14px
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;

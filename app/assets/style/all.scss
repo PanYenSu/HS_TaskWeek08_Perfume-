@@ -1,8 +1,9 @@
 @import 'config/var'; 
 @import 'bootstrap/bootstrap';
-@import 'config/variables'; 
+// @import 'config/variables'; 
 @import 'config/base';
 @import 'config/utility';
 @import 'helper/hidetext';
+@import 'components/buttons';
 @import 'components/swiper';
 @import 'layout/layout';
