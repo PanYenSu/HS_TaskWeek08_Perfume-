@@ -1,11 +1,7 @@
 .header {
-    .navbar {
-        &-badge {
-            transform: translateX(-6px) translateY(-6px);
-        }
-        &-toggler {
-            outline: none;
-        }
+    .logo {
+        width: 121px;
+        height: 55px;
     }
 
 }

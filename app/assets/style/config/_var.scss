@@ -1,0 +1,27 @@
+// $nav-link-padding-y:                .5rem !default;
+$nav-link-padding-y:                0;
+// $nav-link-padding-x:                1rem !default;
+$nav-link-padding-x:                0;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),  //4
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),  //24
+    5: ($spacer * 3),    //48
+    6: ($spacer * 2),    //32
+    7: ($spacer * 1.25),  //20
+    8: ($spacer * 1.75),  //28
+    9: ($spacer * 2.25),   //36
+    10: ($spacer * 3.75),   //60
+    11: ($spacer * 3.25),   //52
+    12: ($spacer * 1.875),   //30
+    13: ($spacer * 2.5),   //40
+    14: ($spacer * .75)   //12
+  ),
+  $spacers
+);
