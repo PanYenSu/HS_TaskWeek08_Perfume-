@@ -7,31 +7,45 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link rel="stylesheet" href="./assets/style/all.css">
-  <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
-  <link rel="stylesheet" href="jqueryui/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
   <header class="header">
-    <div class="container d-flex justify-content-between align-items-center">      
-      <a class="" href="index.html">
-        <h1 class="m-0">PETPET</h1>
-        <img src="./assets/images/logo.svg" class="d-inline-block align-top logo" alt="">
-      </a>
-      <ul class="nav ">
-        <li class="nav-item ">
-          <a class="nav-link pl-10 text-primary" href="#">預約服務</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link pl-10 text-primary" href="#">成為寵物保姆</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link pl-10 text-primary" href="#">登入</a>
-        </li>
-      </ul>
+    <div class="container ">      
+      
+
+      <nav class="navbar navbar-expand-md navbar-light align-items-center p-0 ">
+        
+        <a class="" href="index.html">
+          <h1 class="m-0">PETPET</h1>
+          <img src="./assets/images/logo.svg" class="d-inline-block align-top logo" alt="">
+        </a>
+        <div class="d-flex ">
+          <button class="navbar-toggler border-0 " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+        </div>  
+               
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav nav">
+            <li class="nav-item text-center">
+              <a class="nav-link pl-md-10 pr-0 text-primary font-weight-bold" href="#"> 預約服務</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link pl-md-10 pr-0 text-primary font-weight-bold" href="#">成為寵物保姆</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link pl-md-10 pr-0 text-primary font-weight-bold" href="#">登入</a>
+            </li>          
+          </ul>
+        </div>
+      </nav>
+
     </div>
   </header>
 
@@ -52,34 +66,72 @@
     </div>
     
     <div class="container">
+
       <div class="row">
         <div class="col">
-          <h5 class="text-primary">寵物服務</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Active</a>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item border-0 p-0">
+              <a href="#" class="list-group-item-action ">
+                <img src="./assets/images/logo.svg" class="d-inline-block align-top logo" alt="">
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+            <li class="list-group-item text-primary border-0 p-0">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
           </ul>
         </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
       </div>
+  
+      <table class="table table-borderless">
+        <thead>
+          <tr class="h5 text-primary">
+            <th scope="col">
+              <a class="" href="index.html">                
+                
+              </a>
+            </th>
+            <th scope="col">寵物服務</th>
+            <th scope="col">加入我們</th>
+            <th scope="col">聯繫我們</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>@twitter</td>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
-  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 
   

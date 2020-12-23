@@ -3,9 +3,16 @@
         width: 121px;
         height: 55px;
     }
+    .nav-link:hover {
+        border-bottom: 2px solid $primary;
+    }
 
 }
 .footer {
+    .logo {
+        width: 121px;
+        height: 55px;
+    }
     .form-control {
         max-width: 540px;
         height: 48px;

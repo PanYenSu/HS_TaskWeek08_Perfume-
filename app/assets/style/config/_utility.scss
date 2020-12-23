@@ -5,7 +5,11 @@
 			@content;
 		}
 	} @else if $point == phone {
-		@media (max-width: 767px) {
+		@media (max-width: 768px) {
+			@content;
+		}
+	} @else if $point == phoneS {
+		@media (max-width: 540px) {
 			@content;
 		}
 	}
