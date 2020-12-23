@@ -69,7 +69,8 @@ $primary:     #772400 !default;
 $primary01:     #F0AD25 !default;
 $primary02:     #D54100 !default;
 $primary03:     #CED4DA !default;
-$secondary:     $gray-600 !default;
+// $secondary:     $gray-600 !default;
+$secondary:      #804831 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -159,6 +160,7 @@ $spacers: map-merge(
     12: ($spacer * 3.75),   //60
     13: ($spacer * 1.875),   //30
     14: ($spacer * .75),   //12
+    15: ($spacer * 5.25),   //84
   ),
   $spacers
 );

@@ -5,21 +5,31 @@
     }
     .nav-link:hover {
         border-bottom: 2px solid $primary;
+        @include media-breakpoint-down(md) {
+            border-bottom: none;
+        }
     }
-
 }
 .footer {
     .logo {
         width: 121px;
         height: 55px;
-    }
+    }  
     .form-control {
         max-width: 540px;
         height: 48px;
     }
-    @include media-breakpoint-down(md) {
-        .footer-logo {
-            width: 100%;
+    @include media-breakpoint-down(xs) {
+        .form-control {
+            max-width: 510px;
+        }
+        .contact {
+            .h1 {
+                font-size: 24px;
+            }
+            .h5 {
+                font-size: 16px;
+            }
         }
     }
 }

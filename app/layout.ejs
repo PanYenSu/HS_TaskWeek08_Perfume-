@@ -16,7 +16,7 @@
 
 <body>
   <header class="header">
-    <div class="container ">      
+    <div class="container px-3 px-sm-10 px-md-0 ">      
       
 
       <nav class="navbar navbar-expand-md navbar-light align-items-center p-0 ">
@@ -26,7 +26,7 @@
           <img src="./assets/images/logo.svg" class="d-inline-block align-top logo" alt="">
         </a>
         <div class="d-flex ">
-          <button class="navbar-toggler border-0 " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
           </button>
         </div>  
@@ -34,13 +34,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav nav">
             <li class="nav-item text-center">
-              <a class="nav-link pl-md-10 pr-0 text-primary font-weight-bold" href="#"> 預約服務</a>
+              <a class="nav-link mr-0 py-2 text-primary font-weight-bold" href="#"> 
+                預約服務</a>
             </li>
             <li class="nav-item text-center">
-              <a class="nav-link pl-md-10 pr-0 text-primary font-weight-bold" href="#">成為寵物保姆</a>
+              <a class="nav-link ml-md-10 mr-0 py-2 text-primary font-weight-bold" href="#">
+                成為寵物保姆</a>
             </li>
             <li class="nav-item text-center">
-              <a class="nav-link pl-md-10 pr-0 text-primary font-weight-bold" href="#">登入</a>
+              <a class="nav-link ml-md-10 pr-0 py-2 text-primary font-weight-bold" href="#">
+                登入</a>
             </li>          
           </ul>
         </div>
@@ -52,10 +55,11 @@
   <%- contents %>
 
   <footer class="footer ">
-    <div class="bg-primary01 py-9">
+    <div class="bg-primary01 py-9 px-3 px-sm-10 px-md-0">
       <div class="container contact ">
-        <h2 class="h1 text-primary">有任何我們能幫助您的嗎？</h2>
-        <p class="h5 mb-3 text-primary font-weight-light">輸入電子信箱<br>將有專業人員在線幫您解決所有問題</p>
+        <h2 class="h1 mb-3 text-primary">有任何我們能幫助您的嗎？</h2>
+        <p class="h5 text-primary font-weight-light">輸入電子信箱</p>
+        <p class="h5 mb-3 text-primary font-weight-light">將有專業人員在線幫您解決所有問題</p>
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="btn-contact">
           <div class="input-group-append">
@@ -65,60 +69,69 @@
       </div>
     </div>
     
-    <div class="container">
+    <div class="container px-3 px-sm-10 px-md-0">
+      <div class="row align-items-center mb-0 mb-sm-4 mt-2 mt-sm-12">
+        <div class="col">
+          <a href="#" class="list-group-item-action ">
+            <img src="./assets/images/logo.svg" class="d-inline-block align-top logo" alt="">
+          </a>
+        </div>
+        <div class="col d-none d-sm-block"><h5 class="text-primary m-0">寵物服務</h5></div>
+        <div class="col d-none d-sm-block"><h5 class="text-primary m-0">加入我們</h5></div>
+        <div class="col d-none d-sm-block"><h5 class="text-primary m-0">聯繫我們</h5></div>
+      </div>
 
       <div class="row">
         <div class="col">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item border-0 p-0">
-              <a href="#" class="list-group-item-action ">
-                <img src="./assets/images/logo.svg" class="d-inline-block align-top logo" alt="">
-              </a>
-            </li>
-            <li class="list-group-item text-primary border-0 p-0">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+          <ul class="list-group list-group-flush font-weight-light d-none d-sm-block">
+            <li class="list-group-item border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">關於我們</a></li>
+            <li class="list-group-item text-primary border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">幫助中心</a></li>
+            <li class="list-group-item text-primary border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">使用條款</a></li>
+            <li class="list-group-item text-primary border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">隱私政策</a></li>
           </ul>
         </div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+        <div class="col">
+          <ul class="list-group list-group-flush font-weight-light d-none d-sm-block">
+            <li class="list-group-item border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">寵物寄宿</a></li>
+            <li class="list-group-item text-primary border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">寵物到府保姆</a></li>
+            <li class="list-group-item text-primary border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">寵物美容洗澡</a></li>
+            <li class="list-group-item text-primary border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">寵物行為訓練</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-group list-group-flush font-weight-light d-none d-sm-block">
+            <li class="list-group-item border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">成為寵物保姆</a></li>
+            <li class="list-group-item text-primary border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">加入寵物計程車</a></li>
+            <li class="list-group-item text-primary border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">專屬 APP 下載</a></li>
+            <li class="list-group-item text-primary border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">相關合約條款</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-group list-group-flush font-weight-light d-none d-sm-block">
+            <li class="list-group-item border-0 p-0 mb-4">
+              <a href="#" class="text-primary bg-white text-decoration-none">petpet@petmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mb-8 mt-0 mt-sm-15">
+        <p class="h5 text-primary d-none d-sm-block">07-123-4567</p>
+        <p class="h6 text-primary mb-4">Copyright © 2020 PetPet. All rights reserved.</p>
       </div>
   
-      <table class="table table-borderless">
-        <thead>
-          <tr class="h5 text-primary">
-            <th scope="col">
-              <a class="" href="index.html">                
-                
-              </a>
-            </th>
-            <th scope="col">寵物服務</th>
-            <th scope="col">加入我們</th>
-            <th scope="col">聯繫我們</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>@twitter</td>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+      
     </div>
   </footer>
 

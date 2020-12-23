@@ -11,10 +11,10 @@
       right: 0;
       z-index: 5;  
       .nav-item {
-          background: #707070;
+          background: $primary01;
           border-bottom: 1px solid $white;
-          &:hover {
-              background: darken(#707070, 5%) ;
+          &:hover {          
+            background: darken(#F8B52E, 15%) ;
           }
       }
       .nav-link {
