@@ -1,7 +1,17 @@
-.banner-contain {
-
-    @include banner-contain("../images/index-1.png");
-    // 背景圖視差滾動
-    background-attachment: fixed;
-
+.banner {
+    .container {
+        padding-top: 300px;
+        height: 736px;
     }
+
+    &-img {
+        @include banner-img("../images/index-1.png");
+    // 背景圖視差滾動
+    // background-attachment: fixed;
+    }
+
+}
+.main {
+    // padding-top: 300px;
+    height: 500px;
+}

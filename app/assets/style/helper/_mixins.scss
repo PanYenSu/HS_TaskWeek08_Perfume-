@@ -6,10 +6,14 @@
     // background-size: 30%;
     background-repeat: no-repeat;    
 }
-@mixin banner-contain($url) {
+@mixin banner-img($url) {
     background-image: url($url);
+    width: 530px;
     height: 736px;
-    background-size: contain;
-    // background-size: 40% 100%;
-    background-repeat: no-repeat;    
+    background-position: center center;
+    // background-size: contain;
+    transform: transLateX(0%);
+    background-repeat: no-repeat; 
+    left: 0;
+    top: 0;   
 }
