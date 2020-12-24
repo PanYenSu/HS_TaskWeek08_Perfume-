@@ -8,9 +8,8 @@
 }
 @mixin banner-contain($url) {
     background-image: url($url);
-    width: 530px;
     height: 736px;
-    // background-size: contain;
+    background-size: contain;
     // background-size: 40% 100%;
     background-repeat: no-repeat;    
 }

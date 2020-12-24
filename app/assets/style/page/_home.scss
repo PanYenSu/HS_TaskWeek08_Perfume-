@@ -1,9 +1,5 @@
 .banner-contain {
-    // &-contain {
-    //     background-size: contain;
-    // }
-    // width: 530px;
-    // background-size: 30%;
+
     @include banner-contain("../images/index-1.png");
     // 背景圖視差滾動
     background-attachment: fixed;
