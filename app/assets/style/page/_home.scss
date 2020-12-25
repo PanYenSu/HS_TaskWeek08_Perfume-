@@ -1,7 +1,44 @@
 .banner {
-    .container {
-        padding-top: 300px;
-        height: 736px;
+    min-height: 352px;
+    @include media-breakpoint-up(sm) {
+        min-height: 288px;
+        // position: relative;
+    }
+    @include media-breakpoint-up(md) {
+        min-height: 736px;
+    }
+    &-container {
+        // padding-top: 300px;
+        // text-align: center;
+        min-height: 352px;       
+        @include media-breakpoint-up(sm) {
+            // max-width: 390px;
+            min-height: 288px;
+            // position: absolute;
+            position: relative;  
+            top: 105px;    
+            .h1 {
+                font-size: 32px;
+            }
+            .h4 {
+                font-size: 20px;          
+            }
+               
+        }
+        @include media-breakpoint-up(md) {
+            min-height: 736px;
+            top: 0;
+            .h1 {
+                font-size: 40px;
+            }
+            .h4 {
+                font-size: 24px;                
+            }            
+        }
+        // .material-icons {
+        //     // margin-top: 190px;
+        //     bottom: 0;
+        // }
     }
 
     &-img {
@@ -9,9 +46,30 @@
     // 背景圖視差滾動
     // background-attachment: fixed;
     }
+    .custom-select {
+        
+        @include media-breakpoint-up(md) {
+            &:not(:first-child) {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+            &:not(:last-child) {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }            
+        }
+    }
+
+    .btn {
+        @include media-breakpoint-up(md) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }    
+    }
+    
 
 }
 .main {
     // padding-top: 300px;
-    height: 500px;
+    height: 800px;
 }

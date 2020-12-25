@@ -5,15 +5,35 @@
     background-size: cover;
     // background-size: 30%;
     background-repeat: no-repeat;    
+    // transform: transLateY(80%);
 }
 @mixin banner-img($url) {
     background-image: url($url);
-    width: 530px;
-    height: 736px;
-    background-position: center center;
-    // background-size: contain;
-    transform: transLateX(0%);
-    background-repeat: no-repeat; 
-    left: 0;
-    top: 0;   
+    width: 375px;
+    height: 352px;
+    left: 50%;
+    transform: transLateX(-50%);   
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position:center center;
+    position: absolute;
+    
+    @include media-breakpoint-up(sm) {
+        width: 210px;
+        height: 288px;
+        top: 104px;
+        position: relative;
+        // background-size: contain;
+        // background-size: cover;
+        // background-position: 85% 15%;
+        // transform: transLateyY(-50%);
+    }
+    @include media-breakpoint-up(md) {
+        min-width: 530px;
+        height: 736px;
+        left: 0;
+        top: 0;
+        transform: transLateX(0%);
+        position: absolute;
+    }
 }
