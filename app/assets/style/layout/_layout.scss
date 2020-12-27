@@ -3,6 +3,14 @@
         width: 121px;
         height: 55px;
     }
+    // .navbar-expand-sm .navbar-toggler {
+    //     display: block;
+    // }
+    // @include media-breakpoint-up(sm) {
+    //     .navbar-expand-sm .navbar-toggler {
+    //         display: none;
+    //     }
+    // }
     .nav-link {
         border-bottom:3px solid transparent;
         &:hover {

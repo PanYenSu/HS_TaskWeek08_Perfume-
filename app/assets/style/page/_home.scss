@@ -1,44 +1,51 @@
 .banner {
     min-height: 352px;
+    // min-width: 375px;
+    
     @include media-breakpoint-up(sm) {
         min-height: 288px;
-        // position: relative;
     }
     @include media-breakpoint-up(md) {
         min-height: 736px;
     }
     &-container {
-        // padding-top: 300px;
-        // text-align: center;
-        min-height: 352px;       
+        min-height: 352px;
+        position: relative; 
+        top: 352px;       
         @include media-breakpoint-up(sm) {
             // max-width: 390px;
             min-height: 288px;
             // position: absolute;
-            position: relative;  
+            // position: relative;  
             top: 105px;    
-            .h1 {
+            .h3 {
                 font-size: 32px;
             }
-            .h4 {
-                font-size: 20px;          
+            .h5 {
+                font-size: 20px;                
+            }
+
+            .dropDown {
+                margin-top: 102px;
+                .md-primary02:hover {
+                    color: lighten($primary02, 15%) ;
+                  }
             }
                
         }
         @include media-breakpoint-up(md) {
             min-height: 736px;
             top: 0;
-            .h1 {
+            .h3 {
                 font-size: 40px;
             }
-            .h4 {
+            .h5 {
                 font-size: 24px;                
+            }
+            .dropDown {
+                margin-top: 190px;
             }            
         }
-        // .material-icons {
-        //     // margin-top: 190px;
-        //     bottom: 0;
-        // }
     }
 
     &-img {
@@ -47,7 +54,7 @@
     // background-attachment: fixed;
     }
     .custom-select {
-        
+        height: 48px;
         @include media-breakpoint-up(md) {
             &:not(:first-child) {
                 border-top-left-radius: 0;
@@ -60,10 +67,12 @@
         }
     }
 
+
     .btn {
         @include media-breakpoint-up(md) {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
+            height: 48px;
         }    
     }
     
@@ -72,4 +81,11 @@
 .main {
     // padding-top: 300px;
     height: 800px;
+    top: 352px;
+    @include media-breakpoint-up(sm) {
+        top: 0px; 
+    }
+
+
+    
 }

@@ -6,6 +6,7 @@
       color: $primary03;
       background-color: $primary;
       // border-color: #a23100;
+      background: lighten($primary02, 15%) ;
     }
   }
   &-contact {
@@ -13,4 +14,3 @@
     height: 48px;
   }
 }
-

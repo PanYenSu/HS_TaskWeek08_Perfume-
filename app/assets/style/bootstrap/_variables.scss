@@ -160,7 +160,9 @@ $spacers: map-merge(
     12: ($spacer * 3.75),   //60
     13: ($spacer * 1.875),   //30
     14: ($spacer * .75),   //12
-    15: ($spacer * 5.25),   //84
+    15: ($spacer * 5),   //80
+    16: ($spacer * 5.25),   //84
+    17: ($spacer * 4),   //64
   ),
   $spacers
 );
