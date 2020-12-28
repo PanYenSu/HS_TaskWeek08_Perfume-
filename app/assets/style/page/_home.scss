@@ -78,14 +78,44 @@
     
 
 }
-.main {
-    // padding-top: 300px;
+
+
+.popular{
     height: 800px;
     top: 352px;
     @include media-breakpoint-up(sm) {
         top: 0px; 
     }
-
-
-    
+    .swiper-container {
+        .material-icons {
+            right: 1%;
+            position: absolute;
+            top: 50%;
+            width: calc(var(--swiper-navigation-size)/ 44 * 27);
+            height: var(--swiper-navigation-size);
+            margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+            z-index: 10;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(-90deg);
+            &:hover {
+                color: lighten($primary, 10%) ;
+                }
+        }
+        .swiper-button-next {
+            text-indent: 110%;
+            overflow: hidden;
+            outline: none;
+            }
+    }
 }
+.booking {
+    li {
+        // width: 31%;
+        height: 350px;
+    }
+
+}
+    
