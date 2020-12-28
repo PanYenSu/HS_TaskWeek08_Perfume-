@@ -81,10 +81,10 @@
 
 
 .popular{
-    height: 800px;
     top: 352px;
     @include media-breakpoint-up(sm) {
         top: 0px; 
+        // position: relative;
     }
     .swiper-container {
         .material-icons {
@@ -109,12 +109,53 @@
             overflow: hidden;
             outline: none;
             }
+        .swiper-wrapper {
+            @include media-breakpoint-down(xs) {
+                display: flex;
+                flex-direction: column;
+                .card-popular {
+                    width: 345px;
+                }
+
+            }
+        }
+           
+    }
+    .swiper-slide:nth-child(2) {
+        .card-img-top {
+            object-position: 80% 50%;
+        }    
     }
 }
+
 .booking {
+    // top: 800;
+    // position: absolute;
+    @include media-breakpoint-down(sm) {
+        margin-top: 395px;
+        // position: relative;
+        // position: absolute;
+    }
     li {
-        // width: 31%;
+
         height: 350px;
+        :hover {
+            // filter: grayscale(70%);
+            img {
+                filter: contrast(150%) brightness(50%);
+            } 
+        }
+        &:nth-child(2) {
+            .card-booking-img {
+                object-position: 70% 50%;
+            }    
+        }
+        &:nth-child(3) {
+            .card-booking {
+                height: 49%;
+                
+            }    
+        }
     }
 
 }

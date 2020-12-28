@@ -4,6 +4,7 @@
         .card-img-top {
             // max-width: 350px;
             max-height: 120px;
+            //讓不同寬高的圖片都可以填充在相同區塊
             object-fit: cover;
         }
         .card-body{
@@ -15,8 +16,10 @@
     }
     
     &-booking-img {
-        object-fit: cover;        
+        object-fit: cover;
+
     }
+
 
 
 }
