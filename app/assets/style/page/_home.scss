@@ -1,7 +1,6 @@
 .banner {
     min-height: 352px;
-    // min-width: 375px;
-    
+    // min-width: 375px;   
     @include media-breakpoint-up(sm) {
         min-height: 288px;
     }
@@ -24,14 +23,12 @@
             .h5 {
                 font-size: 20px;                
             }
-
             .dropDown {
                 margin-top: 102px;
                 .md-primary02:hover {
                     color: lighten($primary02, 15%) ;
                   }
-            }
-               
+            }             
         }
         @include media-breakpoint-up(md) {
             min-height: 736px;
@@ -47,7 +44,6 @@
             }            
         }
     }
-
     &-img {
         @include banner-img("../images/index-1.png");
     // 背景圖視差滾動
@@ -66,8 +62,6 @@
             }            
         }
     }
-
-
     .btn {
         @include media-breakpoint-up(md) {
             border-top-left-radius: 0;
@@ -75,10 +69,7 @@
             height: 48px;
         }    
     }
-    
-
 }
-
 
 .popular{
     top: 352px;
@@ -116,10 +107,8 @@
                 .card-popular {
                     width: 345px;
                 }
-
             }
-        }
-           
+        }          
     }
     .swiper-slide:nth-child(2) {
         .card-img-top {
@@ -129,16 +118,22 @@
 }
 
 .booking {
-    // top: 800;
-    // position: absolute;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(xs) {
         margin-top: 395px;
-        // position: relative;
-        // position: absolute;
     }
     li {
+        .card-booking {
+            width: 100%;
+        }
 
-        height: 350px;
+        height: 132px;
+        @include media-breakpoint-up(sm) {
+            width: auto;
+            height: 210px;
+        }
+        @include media-breakpoint-up(md) {
+            height: 350px;
+        }
         :hover {
             // filter: grayscale(70%);
             img {
@@ -151,12 +146,45 @@
             }    
         }
         &:nth-child(3) {
+            @include media-breakpoint-down(xs) {
+                height: 264px;
+            }
             .card-booking {
-                height: 49%;
-                
+                height: 49%;                           
             }    
+        }
+    }
+}
+
+.mission {
+    @include banner("../images/index-9.jpeg", 584px);        
+    // 背景圖視差滾動
+    background-attachment: fixed;
+    @include media-breakpoint-down(xs) {
+        height: 812px;
+    }
+    
+    .h1 {
+        padding: 80px 0 100px 85px;
+        @include media-breakpoint-down(xs) {
+            padding: 60px 22px 47px 22px;
+        }
+    }
+    ul {
+        // padding-left: 85px;
+        @include media-breakpoint-up(sm) {
+            padding-left: 85px;
+        }
+        li {
+            width: 285px;
+            height: 212px;
+            border-left: 2px solid #FFFFFF;
+            @include media-breakpoint-down(xs) {
+                width: 186px;
+                height: 120px;
+                align-items: center;                
+            }
         }
     }
 
 }
-    
