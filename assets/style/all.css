@@ -302,7 +302,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
@@ -324,6 +324,12 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem; }
+
+.h7 {
+  font-size: 0.875rem; }
+
+.h8 {
+  font-size: 3rem; }
 
 .lead {
   font-size: 1.25rem;
@@ -11492,6 +11498,9 @@ textarea {
     margin-top: -70px;
     top: 80px;
     left: 50px; }
+  @media (max-width: 767.98px) {
+    .card-popular {
+      min-width: 192px; } }
 
 .card-booking-img {
   -o-object-fit: cover;
@@ -11652,19 +11661,61 @@ textarea {
     -o-object-position: 80% 50%;
        object-position: 80% 50%; }
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .booking {
     margin-top: 395px; } }
 
 .booking li {
-  height: 350px; }
+  height: 132px; }
+  .booking li .card-booking {
+    width: 100%; }
+  @media (min-width: 576px) {
+    .booking li {
+      width: auto;
+      height: 210px; } }
+  @media (min-width: 768px) {
+    .booking li {
+      height: 350px; } }
   .booking li :hover img {
     -webkit-filter: contrast(150%) brightness(50%);
             filter: contrast(150%) brightness(50%); }
   .booking li:nth-child(2) .card-booking-img {
     -o-object-position: 70% 50%;
        object-position: 70% 50%; }
+  @media (max-width: 575.98px) {
+    .booking li:nth-child(3) {
+      height: 264px; } }
   .booking li:nth-child(3) .card-booking {
     height: 49%; }
+
+.mission {
+  background-image: url("../images/index-9.jpeg");
+  height: 584px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  @media (max-width: 575.98px) {
+    .mission {
+      height: 812px; } }
+  .mission .h1 {
+    padding: 80px 0 100px 85px; }
+    @media (max-width: 575.98px) {
+      .mission .h1 {
+        padding: 60px 22px 47px 22px; } }
+  @media (min-width: 576px) {
+    .mission ul {
+      padding-left: 85px; } }
+  .mission ul li {
+    width: 285px;
+    height: 212px;
+    border-left: 2px solid #FFFFFF; }
+    @media (max-width: 575.98px) {
+      .mission ul li {
+        width: 186px;
+        height: 120px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
 
 /*# sourceMappingURL=all.css.map */
