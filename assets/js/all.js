@@ -46,6 +46,14 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
-  });
+  }); // star
+
+  var html = "";
+
+  for (var i = 0; i < 5; i++) {
+    html += '<span class="material-icons text-primary01">star_rate</span>';
+  }
+
+  $("#star").append(html);
 });
 //# sourceMappingURL=all.js.map
