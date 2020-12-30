@@ -77,44 +77,44 @@
         top: 0px; 
         // position: relative;
     }
-    .swiper-container {
-        .material-icons {
-            right: 1%;
-            position: absolute;
-            top: 50%;
-            width: calc(var(--swiper-navigation-size)/ 44 * 27);
-            height: var(--swiper-navigation-size);
-            margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
-            z-index: 10;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: rotate(-90deg);
-            &:hover {
-                color: lighten($primary, 10%) ;
-                }
-        }
-        .swiper-button-next {
-            text-indent: 110%;
-            overflow: hidden;
-            outline: none;
-            }
-        .swiper-wrapper {
-            @include media-breakpoint-down(xs) {
-                display: flex;
-                flex-direction: column;
-                .card-popular {
-                    width: 345px;
-                }
-            }
-        }          
-    }
-    .swiper-slide:nth-child(2) {
-        .card-img-top {
-            object-position: 80% 50%;
-        }    
-    }
+    // .swiper-container {
+    //     .material-icons {
+    //         right: 1%;
+    //         position: absolute;
+    //         top: 50%;
+    //         width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    //         height: var(--swiper-navigation-size);
+    //         margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+    //         z-index: 10;
+    //         cursor: pointer;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         transform: rotate(-90deg);
+    //         &:hover {
+    //             color: lighten($primary, 10%) ;
+    //             }
+    //     }
+    //     .swiper-button-next {
+    //         text-indent: 110%;
+    //         overflow: hidden;
+    //         outline: none;
+    //         }
+    //     .swiper-wrapper {
+    //         @include media-breakpoint-down(xs) {
+    //             display: flex;
+    //             flex-direction: column;
+    //             .card-popular {
+    //                 width: 345px;
+    //             }
+    //         }
+    //     }          
+    // }
+    // .swiper-slide:nth-child(2) {
+    //     .card-img-top {
+    //         object-position: 80% 50%;
+    //     }    
+    // }
 }
 
 .booking {
@@ -128,7 +128,7 @@
 
         height: 132px;
         @include media-breakpoint-up(sm) {
-            width: auto;
+            // width: auto;
             height: 210px;
         }
         @include media-breakpoint-up(md) {

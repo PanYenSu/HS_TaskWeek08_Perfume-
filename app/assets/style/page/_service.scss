@@ -1,0 +1,27 @@
+.homestay {
+    margin: 83px 0 57px;
+    &-img {
+        @include banner("../images/homestay-1.png", 315px);
+    }
+    .container {
+        // padding: 83px 0 57px;
+        
+        
+    }        
+}
+
+.selectDate {
+    .custom-select {
+        width: 160px;
+        &:nth-child(1) {
+            width: 65px;
+        }
+    }
+    form {
+        height: 38px;
+    }
+    label {
+        line-height:38px;
+    }
+
+}
