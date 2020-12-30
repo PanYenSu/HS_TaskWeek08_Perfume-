@@ -11487,6 +11487,51 @@ textarea {
     .navbar-nav .nav-link {
       color: #fff !important; } }
 
+.swiper-container .material-icons {
+  right: 1%;
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size)/ 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+  z-index: 10;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+  .swiper-container .material-icons:hover {
+    color: #aa3300; }
+
+.swiper-container .swiper-button-next {
+  text-indent: 110%;
+  overflow: hidden;
+  outline: none; }
+
+@media (max-width: 575.98px) {
+  .swiper-container .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .swiper-container .swiper-wrapper .card-popular {
+      width: 345px; } }
+
+.swiper-slide:nth-child(2) .card-img-top {
+  -o-object-position: 80% 50%;
+     object-position: 80% 50%; }
+
 .card-popular {
   -webkit-box-shadow: 0px 3px 6px #adb5bd;
           box-shadow: 0px 3px 6px #adb5bd; }
@@ -11619,47 +11664,6 @@ textarea {
   @media (min-width: 576px) {
     .popular {
       top: 0px; } }
-  .popular .swiper-container .material-icons {
-    right: 1%;
-    position: absolute;
-    top: 50%;
-    width: calc(var(--swiper-navigation-size)/ 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
-    z-index: 10;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
-    .popular .swiper-container .material-icons:hover {
-      color: #aa3300; }
-  .popular .swiper-container .swiper-button-next {
-    text-indent: 110%;
-    overflow: hidden;
-    outline: none; }
-  @media (max-width: 575.98px) {
-    .popular .swiper-container .swiper-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .popular .swiper-container .swiper-wrapper .card-popular {
-        width: 345px; } }
-  .popular .swiper-slide:nth-child(2) .card-img-top {
-    -o-object-position: 80% 50%;
-       object-position: 80% 50%; }
 
 @media (max-width: 575.98px) {
   .booking {
@@ -11671,7 +11675,6 @@ textarea {
     width: 100%; }
   @media (min-width: 576px) {
     .booking li {
-      width: auto;
       height: 210px; } }
   @media (min-width: 768px) {
     .booking li {
@@ -11717,5 +11720,25 @@ textarea {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; } }
+
+.homestay {
+  margin: 83px 0 57px; }
+  .homestay-img {
+    background-image: url("../images/homestay-1.png");
+    height: 315px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+.selectDate .custom-select {
+  width: 160px; }
+  .selectDate .custom-select:nth-child(1) {
+    width: 65px; }
+
+.selectDate form {
+  height: 38px; }
+
+.selectDate label {
+  line-height: 38px; }
 
 /*# sourceMappingURL=all.css.map */
