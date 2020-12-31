@@ -11536,9 +11536,7 @@ textarea {
   -webkit-box-shadow: 0px 3px 6px #adb5bd;
           box-shadow: 0px 3px 6px #adb5bd; }
   .card-popular .card-img-top {
-    max-height: 120px;
-    -o-object-fit: cover;
-       object-fit: cover; }
+    max-height: 120px; }
   .card-popular .card-body {
     margin-top: -70px;
     top: 80px;
@@ -11547,9 +11545,20 @@ textarea {
     .card-popular {
       min-width: 192px; } }
 
-.card-booking-img {
+.card-booking-img, .card-img-top {
   -o-object-fit: cover;
      object-fit: cover; }
+
+.card-products {
+  -webkit-box-shadow: 0px 3px 6px #adb5bd;
+          box-shadow: 0px 3px 6px #adb5bd; }
+  .card-products .card-img-top {
+    max-height: 128px; }
+  .card-products-body {
+    padding: 8px 18px 40px 17px;
+    background: #FAFAFA; }
+  .card-products-footer .card-link:hover {
+    background-color: #edeff1 !important; }
 
 .header .logo {
   width: 121px;
@@ -11723,6 +11732,9 @@ textarea {
 
 .homestay {
   margin: 83px 0 57px; }
+  @media (max-width: 575.98px) {
+    .homestay {
+      margin: 0; } }
   .homestay-img {
     background-image: url("../images/homestay-1.png");
     height: 315px;
@@ -11740,5 +11752,8 @@ textarea {
 
 .selectDate label {
   line-height: 38px; }
+
+.popular-service {
+  top: 0; }
 
 /*# sourceMappingURL=all.css.map */

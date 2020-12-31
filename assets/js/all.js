@@ -54,6 +54,6 @@ $(document).ready(function () {
     html += '<span class="material-icons text-primary01">star_rate</span>';
   }
 
-  $("#star").append(html);
+  $(".star").append(html);
 });
 //# sourceMappingURL=all.js.map
