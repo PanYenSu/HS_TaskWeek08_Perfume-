@@ -45,7 +45,7 @@
                 成為寵物保姆</a>
             </li>
             <li class="nav-item text-center" data-aos="fade-down" data-aos-delay="1000">
-              <a class="nav-link ml-md-10 pr-0 py-2 text-primary font-weight-bold" href="#">
+              <a class="nav-link ml-md-10 pr-0 py-2 text-primary font-weight-bold" href="login.html">
                 登入</a>
             </li>          
           </ul>
@@ -57,7 +57,12 @@
 
   <%- contents %>
 
+  
+
+
   <footer class="footer ">
+    <% if (title === 'Login') { %> <% } else { %>
+
     <div class="bg-primary01 py-9 px-3  px-md-0">
       <div class="container contact ">
         <h2 class="h1 mb-3 text-primary">有任何我們能幫助您的嗎？</h2>        
@@ -77,7 +82,7 @@
     <div class="container px-3 px-md-0">
       <div class="row align-items-center mb-0 mb-sm-4 mt-2 mt-sm-12">
         <div class="col">
-          <a href="#" class="">
+          <a href="index.html" class="">
             <img src="./assets/images/logo.svg" class="d-inline-block align-top logo" alt="">
           </a>
         </div>
@@ -102,7 +107,7 @@
         <div class="col">
           <ul class="list-group list-group-flush font-weight-light d-none d-sm-block">
             <li class="list-group-item border-0 p-0 mb-4">
-              <a href="#" class="text-primary bg-white text-decoration-none">寵物寄宿</a></li>
+              <a href="service.html" class="text-primary bg-white text-decoration-none">寵物寄宿</a></li>
             <li class="list-group-item text-primary border-0 p-0 mb-4">
               <a href="#" class="text-primary bg-white text-decoration-none">寵物到府保姆</a></li>
             <li class="list-group-item text-primary border-0 p-0 mb-4">
@@ -138,7 +143,9 @@
   
       
     </div>
+    <% } %>
   </footer>
+  
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

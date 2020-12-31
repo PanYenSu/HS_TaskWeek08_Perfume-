@@ -1,13 +1,12 @@
 .card {
+
     &-popular {
         box-shadow: 0px 3px 6px #adb5bd;
         .card-img-top {
             // max-width: 350px;
             max-height: 120px;
-            //讓不同寬高的圖片都可以填充在相同區塊
-            object-fit: cover;
         }
-        .card-body{
+        .card-body {
             // position: absolute;
             margin-top: -70px;
             top: 80px;
@@ -15,15 +14,29 @@
         }
         @include media-breakpoint-down(sm) {
             min-width: 192px;
-        }
-        
-    }
-    
-    &-booking-img {
+        }     
+    }  
+
+    &-booking-img, &-img-top, {
+        //讓不同寬高的圖片都可以填充在相同區塊
         object-fit: cover;
-
     }
 
-
-
+    &-products {
+        box-shadow: 0px 3px 6px #adb5bd;
+        .card-img-top {            
+            max-height: 128px;
+        }
+        &-body {
+            padding: 8px 18px 40px 17px;
+            background: #FAFAFA;
+            
+        }
+        &-footer {
+            .card-link:hover {
+                background-color: lighten($gray-300, 5%) !important;
+                // background: darken($primary02, 15%);
+            }
+        }
+    }
 }

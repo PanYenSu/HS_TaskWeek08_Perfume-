@@ -1,13 +1,15 @@
 .homestay {
     margin: 83px 0 57px;
+    @include media-breakpoint-down(xs) {
+        margin: 0;;
+    }
     &-img {
         @include banner("../images/homestay-1.png", 315px);
+        @include media-breakpoint-down(xs) {
+            
+        }
     }
-    .container {
-        // padding: 83px 0 57px;
-        
-        
-    }        
+      
 }
 
 .selectDate {
@@ -24,4 +26,10 @@
         line-height:38px;
     }
 
+}
+.popular-service {
+    top: 0;
+}
+.products {
+    
 }

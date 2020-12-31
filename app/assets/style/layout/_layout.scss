@@ -3,14 +3,7 @@
         width: 121px;
         height: 55px;
     }
-    // .navbar-expand-sm .navbar-toggler {
-    //     display: block;
-    // }
-    // @include media-breakpoint-up(sm) {
-    //     .navbar-expand-sm .navbar-toggler {
-    //         display: none;
-    //     }
-    // }
+
     .nav-link {
         border-bottom:3px solid transparent;
         &:hover {
@@ -21,23 +14,6 @@
             }
         }
     }
-    // .nav-link:after {
-    //     // text-decoration: none;
-    //     position: relative;
-    //     // color: #3366FF;
-    //     }
-    // .nav-link:after {
-    //     content: '';
-    //     position: absolute;
-    //     bottom: -2px;
-    //     left: 0;
-    //     width: 0%;
-    //     border-bottom: 2px solid #3366FF;
-    //     transition: 0.4s;
-    //     }
-    //     .nav-link:hover:after {
-    //     width: 100%;
-    //     }
 
 }
 .footer {

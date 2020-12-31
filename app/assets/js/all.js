@@ -53,7 +53,7 @@ $(document).ready(() => {
   for (var i = 0; i < 5; i++) {
     html += '<span class="material-icons text-primary01">star_rate</span>';
   }
-  $("#star").append(html);
+  $(".star").append(html);
 
   
 });
