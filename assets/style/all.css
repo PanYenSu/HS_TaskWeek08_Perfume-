@@ -11470,6 +11470,17 @@ textarea {
   width: 160px;
   height: 48px; }
 
+.btn-form:hover {
+  background-color: #edeff1 !important; }
+
+.btn-login, .btn-member {
+  height: 48px;
+  width: 255px; }
+
+@media (max-width: 991.98px) {
+  .btn-login, .btn-member {
+    width: 100%; } }
+
 .navbar-toggler {
   outline: none; }
 
@@ -11755,5 +11766,29 @@ textarea {
 
 .popular-service {
   top: 0; }
+
+.container-login {
+  padding: 112px 0 80px; }
+  @media (max-width: 575.98px) {
+    .container-login {
+      padding: 64px 0 122px; } }
+
+.member .container {
+  margin-top: 64px;
+  height: 100vh; }
+  .member .container .h4 {
+    line-height: 36px; }
+  @media (min-width: 768px) {
+    .member .container {
+      margin-top: 269px; } }
+  @media (min-width: 992px) {
+    .member .container {
+      margin-top: 157px; }
+      .member .container .h4 {
+        font-size: 32px;
+        line-height: 48px; } }
+
+.member-name {
+  line-height: 52px; }
 
 /*# sourceMappingURL=all.css.map */

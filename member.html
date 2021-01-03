@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Login</title>
+  <title>Member</title>
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -47,8 +47,19 @@
             </li>
             <li class="nav-item text-center" data-aos="fade-down" data-aos-delay="1000">
               <!-- <a class="nav-link ml-md-10 pr-0 py-2 text-primary font-weight-bold" href="login.html"> -->
-                 
-                  <a class="nav-link ml-md-10 pr-0 py-2 text-primary font-weight-bold" href="login.html">登入</a> 
+                  
+                  <div class="dropdown">
+                    <a class="nav-link ml-md-10 pr-0 py-2 text-primary font-weight-bold dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Hi, Joanne
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item text-primary" href="#">會員資料</a>
+                      <a class="dropdown-item text-primary" href="#">預約查詢</a>
+                      <a class="dropdown-item text-primary" href="#">歷史預約</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-primary02" href="#">切換保母帳號</a>
+                    </div>
+                  </div>
                   
                 <!-- </a> -->
             </li>          
@@ -60,54 +71,50 @@
   </header>
 
   
-<section class="banner position-relative ">
-    <div class="banner-img d-lg-block d-none"></div>
-    <div class="container container-login  row justify-content-center justify-content-lg-end align-items-center">
-        <div class="col col-sm-8 col-lg-7 px-3 p-sm-0 ">
-            <h2 class="h2 text-primary font-weight-bolder mb-12">登入</h2>
-            <form>
-                <!-- <div class="form-row"> -->
-                  <div class="form-group ">
-                    <label for="inputEmail4">電子信箱</label>
-                    <input type="email" class="form-control form-control-lg font-weight-lighter"  id="inputEmail4" placeholder="example@gmail.com">
-                  </div>
-                  <div class="form-group ">
-                    <label for="inputPassword4">密碼</label>
-                    <input type="password" class="form-control form-control-lg font-weight-lighter" id="inputPassword4" placeholder="請輸入密碼">
-                    <a href="#"><small class="form-text text-muted">忘記密碼</small></a>
-                  </div>
-             
-                  <div class="form-group form-row ">
-                    <div class="form-group col-md-6">
-                      <button type="button" class="btn-form form-control form-control-lg btn-block py-0 font-weight-lighter ">
-                        <img src="./assets/images/facebook.svg " class="d-inline" alt="...">
-                        Facebook
-                      </button>
-                    </div>
-                    
-                    <div class="form-group col-md-6">
-                      <button type="button" class="btn-form form-control form-control-lg btn-block py-0 font-weight-lighter ">
-                        <img src="./assets/images/google.svg " class="d-inline" alt="...">
-                        Google
-                      </button>
-                    </div>
-                  </div>
-
-
-
-                <div class="form-group ">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      記住我的帳號
-                    </label>
-                  </div>
+<section class="member">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-1"></div>
+            <div class="col-12 col-md-6 col-lg-5 d-flex flex-column justify-content-center mb-12 mb-sm-0 ml-3 ml-md-0">
+                <div class="mb-13">
+                    <h2 class="h2 d-inline text-primary ">會員資料</h2>
+                    <a href="#" class="text-primary">
+                        <span class="material-icons">
+                            create
+                            </span>
+                    </a>
                 </div>
-                <div class="form-group col-12 p-0">
-                  <a href="member.html" class="btn btn-login btn-primary02 rounded d-flex align-items-center justify-content-center " > <p class="h5 mb-0">登入</p> </a>
-                  <a href="#" class="text-primary02 text-decoration-none"><p>還沒註冊嗎？</p></a>
+                
+                <dl class="row ">
+                    <dt class="col-3 mb-9">
+                        <img src="./assets/images/person-5.png " class="" alt="...">
+                    </dt>
+                    <dd class="col-9 text-primary member-name">Joanne</dd>
+                  
+                    <dt class="col-3 mb-7">電子信箱</dt>
+                    <dd class="col-9 text-primary">cycample@gmail.com</dd>
+                  
+                    <dt class="col-3 mb-7">聯絡電話</dt>
+                    <dd class="col-9 text-primary">0912-345-789</dd>
+                  
+                    <dt class="col-3 mb-7">性別</dt>
+                    <dd class="col-9 text-primary">女</dd>
+
+                    <dt class="col-3 text-truncate">聯絡地址</dt>
+                    <dd class="col-9 text-primary">高雄市鹽埕區七賢三路123號</dd>
+                  
+ 
+                  </dl>
+            </div>
+            <div class="col-12 col-md-6 ">
+                <div class="px-3 px-md-0">
+                    <h4 class="h4 text-primary mb-9 mb-lg-10">Hi, Joanne <br>喜歡我們提供的服務嗎？ <br>現在你也可以成為寵物保姆囉！</h2>
+                    <button type="button" class="btn btn-member btn-primary02 ">成為寵物保姆</button>
+                        
                 </div>
-              </form>
+                
+                     
+            </div>
         </div>
     </div>
 </section>
