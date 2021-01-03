@@ -6,55 +6,52 @@ current: login
 ---
 
 <section class="banner position-relative ">
-    <div class="banner-img "></div>
-    <div class="container row justify-content-end">
-        <div class="col-7">
-            <h2 class="h2 text-primary font-weight-bolder">登入</h2>
+    <div class="banner-img d-lg-block d-none"></div>
+    <div class="container container-login  row justify-content-center justify-content-lg-end align-items-center">
+        <div class="col col-sm-8 col-lg-7 px-3 p-sm-0 ">
+            <h2 class="h2 text-primary font-weight-bolder mb-12">登入</h2>
             <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                <!-- <div class="form-row"> -->
+                  <div class="form-group ">
+                    <label for="inputEmail4">電子信箱</label>
+                    <input type="email" class="form-control form-control-lg font-weight-lighter"  id="inputEmail4" placeholder="example@gmail.com">
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                  <div class="form-group ">
+                    <label for="inputPassword4">密碼</label>
+                    <input type="password" class="form-control form-control-lg font-weight-lighter" id="inputPassword4" placeholder="請輸入密碼">
+                    <a href="#"><small class="form-text text-muted">忘記密碼</small></a>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress2">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+             
+                  <div class="form-group form-row ">
+                    <div class="form-group col-md-6">
+                      <button type="button" class="btn-form form-control form-control-lg btn-block py-0 font-weight-lighter ">
+                        <img src="./assets/images/facebook.svg " class="d-inline" alt="...">
+                        Facebook
+                      </button>
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                      <button type="button" class="btn-form form-control form-control-lg btn-block py-0 font-weight-lighter ">
+                        <img src="./assets/images/google.svg " class="d-inline" alt="...">
+                        Google
+                      </button>
+                    </div>
                   </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Choose...</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                  </div>
-                </div>
-                <div class="form-group">
+
+
+
+                <div class="form-group ">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">
-                      Check me out
+                      記住我的帳號
                     </label>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <div class="form-group col-12 p-0">
+                  <a href="member.html" class="btn btn-login btn-primary02 rounded d-flex align-items-center justify-content-center " > <p class="h5 mb-0">登入</p> </a>
+                  <a href="#" class="text-primary02 text-decoration-none"><p>還沒註冊嗎？</p></a>
+                </div>
               </form>
         </div>
     </div>

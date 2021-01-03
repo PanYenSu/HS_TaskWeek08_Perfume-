@@ -13,4 +13,18 @@
     width: 160px;
     height: 48px;
   }
+  &-form {
+    &:hover {
+      background-color: #edeff1 !important;
+    }
+  }
+  &-login, &-member {
+    height: 48px;
+    width: 255px;
+  }
+  @include media-breakpoint-down(md) {
+    &-login, &-member {
+      width: 100%; 
+    }
+  }
 }
